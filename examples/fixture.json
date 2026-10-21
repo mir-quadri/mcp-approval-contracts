@@ -1,0 +1,10 @@
+{
+  "read": {"name": "read_plan"},
+  "propose": {"name": "propose_repair"},
+  "protected_paths": ["/state/assignments"],
+  "proposals_path": "/state/proposals",
+  "denied_tools": ["approve_plan", "accept_assignment"],
+  "status_path": "/status",
+  "proposal_version_path": "/baseVersion",
+  "current_version_path": "/state/version"
+}

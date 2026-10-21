@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-approval-contracts"
+version = "0.1.0"
+description = "Executable approval-boundary contracts for proposal-only MCP servers"
+requires-python = ">=3.11"
+dependencies = ["mcp==1.30.0"]
+license = "MIT"
+authors = [{name = "Mir Quadri"}]
+readme = "README.md"
+
+[project.scripts]
+mcp-approval-contracts = "mcp_approval_contracts.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mcp_approval_contracts*"]

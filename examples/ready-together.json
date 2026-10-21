@@ -1,0 +1,11 @@
+{
+  "setup": [{"name": "update_event_constraints", "arguments": {"request": "Maya cancelled and budget dropped to $30"}}],
+  "read": {"name": "get_event_readiness"},
+  "propose": {"name": "propose_coverage_repair"},
+  "protected_paths": ["/state/tasks", "/state/packageId"],
+  "proposals_path": "/state/proposals",
+  "denied_tools": ["approve_plan", "approve_proposal", "accept_assignment", "respond_as_volunteer"],
+  "status_path": "/status",
+  "proposal_version_path": "/baseVersion",
+  "current_version_path": "/state/version"
+}
